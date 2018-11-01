@@ -43,10 +43,14 @@ class PostsController < ApplicationController
 
 		redirect_to posts_path
 	end
+	
+	private 
 
-end
-
-private def post_params
+	def post_params
 	params.require(:post).permit(:title,:body)
+	end
+
 end
+
+
 	

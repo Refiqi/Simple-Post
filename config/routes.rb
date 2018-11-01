@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-	root 'posts#index', as: 'home'
+	root 'posts#index', as: :home
     get 'index/id' => 'posts#new' , as: :new
   
 	
